@@ -1,9 +1,78 @@
+
+/* Universal Section  */
+
 *{
     margin: 0;
     padding: 0;
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+
+/* logo section  */
+
+header .logo{
+    color: rgba(0, 0, 0, 0.784);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/* navigation bar  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.449);
+}
+header nav > ul{
+    display: flex;
+    gap: 30px;
+}
+header nav li{
+    list-style: none;
+    padding: 20px;
+}
+header nav li:hover{
+    background-color: rgba(0, 0, 0, 0.668);
+    color: white;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+header nav .drop_down_menu{
+    display: none;
+}
+header nav li{
+    transition: 0.5s;
+}
+header nav li:hover > .drop_down_menu{
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.579);
+    border-radius: 5px;
+}
+.drop_down_position{
+    top: 65px;
+    right: 255px;
+}
+header nav li:hover a{
+    color: white;
+}
+.sub_drop_down_menu{
+    border-left: 10px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    left: 205px;
+    width: 150px;
 }
 
 /* banner section  */
